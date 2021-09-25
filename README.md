@@ -1,6 +1,6 @@
 # Who said that?!
 
-Add a prefix that identifies the currently running npm script to every line of its output
+Add a prefix that identifies the currently running npm script to every line of its output.
 
 ## Why?
 Sometimes it's hard to identify which line of output comes from which script when running running multiple npm scripts in parallel or in series like in a monorepo build or a continuous integration output. Just prefix your npm script definition with `which-script` and you will have a tag that includes the package name and the script name on every output line.
