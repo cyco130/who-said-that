@@ -16,7 +16,7 @@ You will have an output like this:
 
 <pre><code>
 <span style="color:cyan">[your-package lint]:</span> /path/to/your/file.js
-<span style="color:cyan">[your-package lint]:</span>   7:40  warning  'x' is defined but never used  @typescript-eslint/no-unused-vars
+<span style="color:cyan">[your-package lint]:</span>   7:40  warning  'x' is defined but never used
 </code></pre>
 
 And it will help you identify which package (`your-package`) and which script (`lint`) logged these messages when examining a large log, for instance.
