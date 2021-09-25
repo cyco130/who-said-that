@@ -7,7 +7,7 @@ export async function whoSaidThat(command: string): Promise<number> {
 	const scriptName = process.env.npm_lifecycle_event;
 
 	if (!packageName || !scriptName) {
-		console.log("Not in a script");
+		console.log("who-said-that isn't running in an npm script");
 		return 1;
 	}
 
@@ -25,7 +25,7 @@ export async function whoSaidThat(command: string): Promise<number> {
 		});
 
 		cp.on("exit", (code) => {
-			resolve(code || 1);
+			resolve(code || 0);
 		});
 
 		prefixOutput(prefix, cp.stdout, process.stdout, color);
