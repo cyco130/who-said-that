@@ -3,7 +3,7 @@
 Adds a prefix that identifies the currently running npm script to every line of its output.
 
 ## Why?
-Sometimes it's hard to identify which line of output comes from which script when running running multiple npm scripts in parallel or in series like in a monorepo build or a continuous integration output. Just prefix your npm script definition with `who-said-that` and you will have a tag that includes the package name and the script name on every output line.
+Sometimes it's hard to identify which line of output comes from which script when running multiple npm scripts in parallel or in series like in a monorepo build or a continuous integration output. Just prefix your npm script definition with `who-said-that` and you will have a tag that includes the package name and the script name on every output line.
 
 ## How?
 Given that you have an npm script like this:
@@ -14,8 +14,7 @@ Given that you have an npm script like this:
 
 You will have an output like this:
 
-<pre><code>
-<span style="color:cyan">[your-package lint]:</span> /path/to/your/file.js
+<pre><code><span style="color:cyan">[your-package lint]:</span> /path/to/your/file.js
 <span style="color:cyan">[your-package lint]:</span>   7:40  warning  'x' is defined but never used
 </code></pre>
 
