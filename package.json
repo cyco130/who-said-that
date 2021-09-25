@@ -1,6 +1,6 @@
 {
 	"name": "who-said-that",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Adds a prefix that identifies the currently running npm script to every line of its output",
 	"scripts": {
 		"prepublishOnly": "pnpm run build",
